@@ -7,16 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "AddressBook.h"
+
 
 int main(int argc, const char * argv[])
 {
-
-    @autoreleasepool {
+    
+    @autoreleasepool
+    {
+        Person * person = [Person personWithName:@"周杰伦" tel:@"18238802518"];
+        person.group = @"中国风";
+        [person show];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        AddressBook * book = [AddressBook book];
+        [book addGroup:@"中国风"];
+        [book addPerson: person];
+        person = [book personByTel:@"18238802518"];
+        person = [book personsByName:@"周杰伦"];
+        person = [book personsByGroup:@"默认"];
+        [book removeGroup:@"中国风"];
     }
+    
     return 0;
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2777CA5192A50FA0074E4C3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C2777C9F192A50FA0074E4C3 /* AddressBook.m */; };
+		C2777CA6192A50FA0074E4C3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C2777CA1192A50FA0074E4C3 /* Person.m */; };
 		C28BB159192A487C00BAA3D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28BB158192A487C00BAA3D3 /* Foundation.framework */; };
 		C28BB15C192A487C00BAA3D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C28BB15B192A487C00BAA3D3 /* main.m */; };
 		C28BB160192A487C00BAA3D3 /* AddressBook.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C28BB15F192A487C00BAA3D3 /* AddressBook.1 */; };
@@ -26,11 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C2777C9E192A50FA0074E4C3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
+		C2777C9F192A50FA0074E4C3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
+		C2777CA0192A50FA0074E4C3 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C2777CA1192A50FA0074E4C3 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		C28BB155192A487C00BAA3D3 /* AddressBook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AddressBook; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28BB158192A487C00BAA3D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C28BB15B192A487C00BAA3D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C28BB15E192A487C00BAA3D3 /* AddressBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddressBook-Prefix.pch"; sourceTree = "<group>"; };
 		C28BB15F192A487C00BAA3D3 /* AddressBook.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AddressBook.1; sourceTree = "<group>"; };
+		C2AB76BF192A521D0050780C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				C28BB15B192A487C00BAA3D3 /* main.m */,
-				C28BB15F192A487C00BAA3D3 /* AddressBook.1 */,
+				C2777CA0192A50FA0074E4C3 /* Person.h */,
+				C2777CA1192A50FA0074E4C3 /* Person.m */,
+				C2777C9E192A50FA0074E4C3 /* AddressBook.h */,
+				C2777C9F192A50FA0074E4C3 /* AddressBook.m */,
 				C28BB15D192A487C00BAA3D3 /* Supporting Files */,
 			);
 			path = AddressBook;
@@ -83,6 +93,8 @@
 		C28BB15D192A487C00BAA3D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2AB76BF192A521D0050780C /* readme.md */,
+				C28BB15F192A487C00BAA3D3 /* AddressBook.1 */,
 				C28BB15E192A487C00BAA3D3 /* AddressBook-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -140,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28BB15C192A487C00BAA3D3 /* main.m in Sources */,
+				C2777CA5192A50FA0074E4C3 /* AddressBook.m in Sources */,
+				C2777CA6192A50FA0074E4C3 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +267,7 @@
 				C28BB165192A487C00BAA3D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
