@@ -24,8 +24,6 @@ int main(int argc, const char * argv[])
         [book addGroup:@"中国风"];
         [book addPerson: person];
         person = [book personByTel:@"18238802518"];
-        person = [book personsByName:@"周杰伦"];
-        person = [book personsByGroup:@"默认"];
         [book removeGroup:@"中国风"];
     }
     
