@@ -38,7 +38,6 @@
  * 
  *  @return 新创建的联系人对象.
  */
-// FIXME: 应该判断一下电话是不是全部是数字.
 + (instancetype) personWithName: (NSString *) name
                                    tel: (NSString *) tel
                                  group: (NSString *) group;

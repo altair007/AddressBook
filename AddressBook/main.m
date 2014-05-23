@@ -24,6 +24,7 @@ int main(int argc, const char * argv[])
         [book addGroup:@"中国风"];
         [book addPerson: person];
         person = [book personByTel:@"18238802518"];
+        NSLog(@"%@", person);
         [book removeGroup:@"中国风"];
     }
     
