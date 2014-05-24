@@ -93,24 +93,11 @@
 #pragma makr - 工具函数
 - (BOOL) isAllNumber: (NSString *) str
 {
-    // str是否为nil或者空串?
-    if (nil == str || [@"" isEqualToString:str])
-    {
-        return NO;
-    }
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"self MATCHES '^[0-9]+$'"];
     
-    // str是否含有0~9以外的字符?
-    for (NSUInteger i = 0; i < str.length; i++)
-    {
-        // 通过ASCII码值比较
-        NSUInteger temp = [str characterAtIndex:i];
-        if (temp < '0' || temp > '9')
-        {
-            return NO;
-        }
-    }
+    BOOL result = [predicate evaluateWithObject:str];
     
-    return YES;
+    return result;
 }
 
 @end
